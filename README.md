@@ -12,6 +12,9 @@ Use Django REST Framework to create an API, then “containerize” it using Doc
 * djangorestframework
 * Docker
 * psycopg2-binary
+* djangorestframework-simplejwt 
+* gunicorn 
+* whitenoise 
 
 ## Models:
 Reservation:
@@ -26,6 +29,8 @@ Reservation:
 
 
 ## Routes
-* admin page -  http://127.0.0.1:8000/admin
+* http://127.0.0.1:8000/admin - admin page 
 * http://localhost:8000/api/v1/reservations/ - to see the list of all reservations in the db
 * http://localhost:8000/api/v1/reservations/reservation.pk/ - to see the reservation details
+* http://localhost:8000/api/token/ - to obtain tokens
+* http://localhost:8000/api/token/refresh/ - to refresh token
